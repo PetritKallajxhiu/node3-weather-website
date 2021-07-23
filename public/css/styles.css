@@ -52,3 +52,12 @@ button {
     color: white;
     padding: 8px;
 }
+
+#help-section-text {
+    text-align: justify;
+}
+
+#about-section-text {
+    text-align: justify;
+    color: teal;
+}
