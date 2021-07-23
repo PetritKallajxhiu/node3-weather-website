@@ -22,6 +22,8 @@ hbs.registerPartials(partialPath)
 // Setup static directory to use 
 app.use(express.static(publicDirectoryPath))
 
+let date_ob = new Date();
+
 app.get('', (req, res) => {
     res.render('index', {
         title: "Home Page",
@@ -33,13 +35,13 @@ app.get('/about', (req, res) => {
     res.render('about', {
         title: "About me",
         name: "Written by: Petrit Kallajxhiu",
-        date: " on 23-07-2021"
+        date: date_ob
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        message: "Help",
+        message: "If you need help contact me at : pkallajxhiu@ritech.co",
         title: "Help",
         name: "Petrit Kallajxhiu",
         date: "on July 19"
