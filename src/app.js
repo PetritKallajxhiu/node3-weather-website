@@ -25,7 +25,7 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: "Home Page",
-        name: "Petrit"
+        name: "Petrit Kallajxhiu"
     })
 })
 
@@ -33,7 +33,7 @@ app.get('/about', (req, res) => {
     res.render('about', {
         title: "About me",
         name: "Written by: Petrit Kallajxhiu",
-        date: " on 12-03-2021"
+        date: " on 23-07-2021"
     })
 })
 
